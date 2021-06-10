@@ -15,7 +15,16 @@ router.post("/sendMail", sendMailController.execute);
 
 router.get("/surveys", surveysController.show);
 router.get("/users", userController.show);
+router.get("/helloWorld", (req, res, next) => {
+  res.json({ msg : "Hello World!" });
+});
 
-// router.get("/answers",));
+router.get("/rodrigo2", (req, res, next) => {
+  res.json({ msg : "Hello Rodrigo2!" });
+});
+// Html test
+router.get("/usersHtml", (req, res, next) => {
+  windows.location.href = '/index.html';
+});
 
 export { router };
