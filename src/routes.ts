@@ -14,6 +14,8 @@ router.post("/surveys", surveysController.create);
 router.post("/sendMail", sendMailController.execute);
 
 router.get("/surveys", surveysController.show);
+router.get("/users", userController.show);
+
 // router.get("/answers",));
 
 export { router };
